@@ -226,6 +226,9 @@ persist.backup.ntpServer=0.pool.ntp.org
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.radio.multisim.config=dsds
