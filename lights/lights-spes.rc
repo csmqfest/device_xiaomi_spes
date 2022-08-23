@@ -9,3 +9,4 @@ service vendor.light /vendor/bin/hw/android.hardware.lights-service.spes
     user system
     group system
     shutdown critical
+    task_profiles ServiceCapacityLow
