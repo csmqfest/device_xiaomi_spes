@@ -3,6 +3,9 @@ audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 ro.config.vc_call_vol_steps=11
 
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
 #WFC
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
@@ -18,3 +21,4 @@ ro.lmk.downgrade_pressure=100
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
+
