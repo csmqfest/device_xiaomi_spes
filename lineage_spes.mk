@@ -11,15 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
-TARGET_ENABLE_BLUR := false
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Product Specifics
-PRODUCT_NAME := evolution_spes
+PRODUCT_NAME := lineage_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -31,3 +27,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="spes-user 11 RKQ1.211001.001 V13.0.15.0.RGCMIXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/spes/spes:11/RKQ1.211001.001/V13.0.15.0.RGCMIXM:user/release-keys
+
+
+# RiceDroid spesific flags
+RICE_MAINTAINER := whyyraku-(@unlsted)
+RICE_OFFICIAL := true
+RICE_CHIPSET := SM680
+SUSHI_BOOTANIMATION := 720
+#WITH_GMS := true
+TARGET_ENABLE_BLUR := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := false
+TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_HAS_UDFPS := false
