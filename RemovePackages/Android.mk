@@ -5,9 +5,11 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
-    AndroidAutoStubPrebuilt \
+    AmbientSensePrebuilt \
     arcore \
     Camera2 \
+    Chrome \
+    Chrome-Stub \
     ConnMO \
     ConnMetrics \
     DCMO \
@@ -25,7 +27,11 @@ LOCAL_OVERRIDES_PACKAGES := \
     OemDmTrigger \
     OPScreenRecord \
     Ornament \
+    PixelLiveWallpaperPrebuilt \
     PlayAutoInstallConfig \
+    PrebuiltGmail \
+    RecorderPrebuilt \
+    SafetyHubPrebuilt \
     SCONE \
     ScribePrebuilt \
     Showcase \
@@ -38,6 +44,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     Tycho \
     USCCDM \
     Videos \
+    VZWAPNLib \
+    VzwOmaTrigger \
     YouTube \
     YouTubeMusicPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true

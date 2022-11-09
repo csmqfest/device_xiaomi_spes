@@ -387,7 +387,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
-    
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2 \
@@ -427,6 +427,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_k7tn/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_k7tn/android.hardware.se.omapi.uicc.xml
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Rootdir
 PRODUCT_PACKAGES += \
